@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-text {
+html {
     font-family: Roboto;
 }
 
@@ -15,10 +15,51 @@ text {
     grid-template-columns: 1fr 2fr;
     justify-content: center;
 }
-.mountain{
-    margin: 24px 52px;
+.steps{
+    background-image: url(../imges/Mountain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 581px;
 }
 
+.big-flag{
+    position: relative;
+    left: 50%;
+    top: 6%;
+}
+.line{
+    position: relative;
+    top: 10px;
+    left: -172px;
+}
+.big_flag{
+    position: relative;
+    top: 10px;
+    left: -176px;
+    height: 92px;
+}
+.task_btns{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    flex-basis: content;
+    height: 100%;
+}
+.left{
+    align-self: flex-end;
+}
+.task_btn{
+    background-color:rgba(71, 194, 147, 1);
+    border-radius:10px;
+    border:none;
+    height: 23px;
+}
+.task_btn > span{
+    line-height: 20px;
+}
+.target_info{
+    margin: 24px;
+}
 .target_box {
     display: flex;
     flex-direction: column;
@@ -27,7 +68,6 @@ text {
     border-color: rgba(223, 228, 245, 1);
     border-radius: 5px;
     padding: 0 10px;
-    margin: 24px;
 }
 
 .card_header {
@@ -67,3 +107,27 @@ p{
     font-weight: bold;
     margin: 4px;
 }
+.info_header{
+    padding: 17px 0;
+}
+.info_box{
+    padding: 10px;
+}
+.info:hover::after{
+    content:attr(data-title);
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius:5px;
+}
+
+.check-list {
+    list-style-type: none;
+    padding:0;
+}
+
+li{
+    margin: 8px 0;
+}
+
