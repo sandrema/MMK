@@ -32,45 +32,76 @@ html {
     top: 10px;
     left: -172px;
 }
-.big_flag{
-    position: relative;
-    top: 10px;
-    left: -176px;
-    height: 92px;
-}
-.task_btns{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column-reverse;
-    flex-basis: content;
+
+
+.task-btns{
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 50% 50%;
     height: 100%;
 }
-.left{
-    align-self: flex-end;
+
+.line{
+    display:block;
+    border-right :solid 6px white;
+    margin: -3px;
 }
-.task_btn{
+
+.box{
+    border-left :solid  6px white;
+    margin: -3px;
+    display: flex;
+    justify-content: flex-start;
+}
+.left-box{
+    border-right :solid 6px white;
+    margin: -3px;
+    display: flex;
+    justify-content: end;
+}
+.task-btn{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(55, 74, 119, 0.2);
+    background-color:rgb(255, 255, 255);
+    border-radius:20px;
+    border:none;
+    height: 23px;
+    margin: 20px;
+}
+.task-btn > span{
+    color: rgba(109, 122, 143, 1);
+    line-height: 20px;
+    padding: 0 10px;
+}
+.task-btn > img {
+    padding-left: 10px;
+}
+.complite{
     background-color:rgba(71, 194, 147, 1);
     border-radius:10px;
     border:none;
     height: 23px;
+    margin: 20px;
 }
-.task_btn > span{
-    line-height: 20px;
+.complite > span{
+    color:rgba(5, 42, 52, 1);
 }
-.target_info{
+.target-info{
     margin: 24px;
 }
-.target_box {
+.target-box {
     display: flex;
     flex-direction: column;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(223, 228, 245, 1);
+    width: 700px;
     border-radius: 5px;
     padding: 0 10px;
 }
 
-.card_header {
+.card-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,10 +138,10 @@ p{
     font-weight: bold;
     margin: 4px;
 }
-.info_header{
+.info-header{
     padding: 17px 0;
 }
-.info_box{
+.info-box{
     padding: 10px;
 }
 .info:hover::after{

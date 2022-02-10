@@ -1,7 +1,5 @@
 
-let checkBox = document.querySelectorAll('.check-box');
-
-
+const checkBox = document.querySelectorAll('.check-box');
 
 checkBox.forEach((el,i)=>{
     checkBox[i].addEventListener('click', (e)=>{
